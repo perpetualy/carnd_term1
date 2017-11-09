@@ -27,12 +27,12 @@ The goals / steps of this project are the following:
 ### Reflection
 
 ### 1. My pipeline contains six steps.
-1st load image as grayscale. 
-2nd blur pictures using Gauss function.
-3rd find edge using canny method. 
-4th clip image region into triangle. 
-5th find lane using houghlineP function. 
-6th draw a line on the image.
+* 1st load image as grayscale. 
+* 2nd blur pictures using Gauss function.
+* 3rd find edge using canny method. 
+* 4th clip image region into triangle. 
+* 5th find lane using houghlineP function. 
+* 6th draw a line on the image.
 In the drawing line function. I've tried many times to keep the lines stable. Finally, I browse the comment in the function.
 So the gradient equation helped me to identity which lines belong to left or right. So I can save them to the correct array.
 After that I use the average function to calculate each x or y values, and then I use these values and the Two-point linear equation (y-y1)/(x-x1)=(y-y2)/(x-x2) to get the linear equation [y=ax+b].
@@ -49,8 +49,6 @@ So that's the way I made the line marker more stable.
 The one is when the resolution of image changed. This pipeline cannot get correct result.
 And when there is too much noise in the image, it's hard to find the correct point as the begin or the end of a line.Sometimes the line may jump to
 an unknown position suddenly, it's weird..
-
-![alt text][vedio1]
 
 ### 3. Suggest possible improvements to your pipeline
 
