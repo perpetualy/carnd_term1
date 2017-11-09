@@ -32,13 +32,11 @@ The goals / steps of this project are the following:
 * 3rd find edge using canny method. 
 * 4th clip image region into triangle. 
 * 5th find lane using houghlineP function. 
-* 6th draw a line on the image.
-	In the drawing line function. I've tried many times to keep the lines stable. Finally, I browse the comment in the function.
-	So the gradient equation helped me to identity which lines belong to left or right. So I can save them to the correct array.
-	After that I use the average function to calculate each x or y values, and then I use these values and the Two-point linear equation (y-y1)/(x-x1)=(y-y2)/(x-x2) to get the linear equation [y=ax+b].
-	This equation is a easy way to find the relationship between x and y.
-	So far I can use it to get x value after I fixed the y value.
-	So that's the way I made the line marker more stable.
+* 6th draw a line on the image.  
+In the drawing line function. I've tried many times to keep the lines stable. Finally, I browse the comment in the function.  
+So the gradient equation helped me to identity which lines belong to left or right. So I can save them to the correct array.  
+After that I use the average function to calculate each x or y values, and then I use these values and the Two-point linear equation (y-y1)/(x-x1)=(y-y2)/(x-x2) to get the linear equation [y=ax+b].  This equation is a easy way to find the relationship between x and y.  
+So far I can use it to get x value after I fixed the y value.So that's the way I made the line marker more stable.
 
 ![alt text][image1]
 ![alt text][image3]
