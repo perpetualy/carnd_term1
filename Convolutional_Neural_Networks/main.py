@@ -4,17 +4,17 @@ mnist = input_data.read_data_sets(".", one_hot=True, reshape=False)
 import tensorflow as tf
 
 # Parameters
-learning_rate = 0.000001
-epochs = 200
-batch_size = 256
+learning_rate = 0.00001
+epochs = 10
+batch_size = 128
 
 # Number of samples to calculate validation and accuracy
 # Decrease this if you're running out of memory to calculate accuracy
-test_valid_size = 1024
+test_valid_size = 256
 
 # Network Parameters
 n_classes = 10  # MNIST total classes (0-9 digits)
-dropout = 0.50  # Dropout, probability to keep units
+dropout = 0.75  # Dropout, probability to keep units
 
 
 # Store layers weight & bias
